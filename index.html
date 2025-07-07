@@ -1,0 +1,158 @@
+<!-- update: 2025-07-07 -->
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mi Página de Informática</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Fondo de estrellas animadas -->
+  <canvas id="galaxy-background"></canvas>
+  <!-- Toggle BB8 -->
+  <label class="bb8-toggle">
+    <input id="theme-toggle" class="bb8-toggle__checkbox" type="checkbox" />
+    <div class="bb8-toggle__container">
+      <div class="bb8-toggle__scenery">
+        <div class="bb8-toggle__star"></div>
+        <div class="bb8-toggle__star"></div>
+        <div class="bb8-toggle__star"></div>
+        <div class="bb8-toggle__star"></div>
+        <div class="bb8-toggle__star"></div>
+        <div class="bb8-toggle__star"></div>
+        <div class="bb8-toggle__star"></div>
+        <div class="tatto-1"></div>
+        <div class="tatto-2"></div>
+        <div class="gomrassen"></div>
+        <div class="hermes"></div>
+        <div class="chenini"></div>
+        <div class="bb8-toggle__cloud"></div>
+        <div class="bb8-toggle__cloud"></div>
+        <div class="bb8-toggle__cloud"></div>
+      </div>
+      <div class="bb8">
+        <div class="bb8__head-container">
+          <div class="bb8__antenna"></div>
+          <div class="bb8__antenna"></div>
+          <div class="bb8__head"></div>
+        </div>
+        <div class="bb8__body"></div>
+      </div>
+      <div class="artificial__hidden">
+        <div class="bb8__shadow"></div>
+      </div>
+    </div>
+  </label>
+
+  <!-- Nieve decorativa -->
+  <div class="snow" id="snow"></div>
+
+  <!-- Contenido principal -->
+  <div class="anim-container">
+
+    <!-- Sección de videos -->
+    <div class="video-section">
+      <div class="button-row">
+        <button class="btn" onclick="showVideo(1)">Video 1</button>
+        <button class="btn" onclick="showVideo(2)">Video 2</button>
+        <button class="btn" onclick="showVideo(3)">Video 3</button>
+        <button class="btn" onclick="showVideo(4)">Video 4</button>
+      </div>
+      <div class="video-box">
+        <div class="content-area" id="content-area">
+          <p>Haz clic en un botón para ver el video.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards de grupos -->
+    <div class="card-wrapper">
+
+      <div class="card-container">
+        <img src="img/grupo1.png" alt="Grupo Primero" />
+        <ul>
+          <li><strong>School Tour</strong></li>
+          <li>C. Hernández</li>
+          <li>P. Raffo</li>
+          <li>O. Causero</li>
+          <li>P. Magarelli</li>
+          <li>S. Magarelli</li>
+        </ul>
+      </div>
+
+      <div class="card-container">
+        <img src="img/grupo2.png" alt="Grupo Segundo" />
+        <ul>
+          <li><strong>Un día con el Cefe</strong></li>
+          <li>Balbo</li>
+          <li>Varela</li>
+          <li>Sapio</li>
+          <li>Cirelli</li>
+          <li>Fariña</li>
+          <li>Calio</li>
+        </ul>
+      </div>
+
+      <div class="card-container">
+        <img src="img/grupo3.png" alt="Grupo Tercero" />
+        <ul>
+          <li><strong>Un día normal con cuarto año</strong></li>
+          <li>Pared</li>
+          <li>Arancibia</li>
+          <li>De Luca</li>
+          <li>Luna</li>
+          <li>Muñoz</li>
+        </ul>
+      </div>
+
+      <div class="card-container">
+        <img src="img/grupo4.png" alt="Grupo Cuarto" />
+        <ul>
+          <li><strong>El misterio en el Ceferino</strong></li>
+          <li>Azul Carcione</li>
+          <li>Ema Cettefrati</li>
+          <li><span class="rojo">Ian Lopez (Owner)</span></li>
+          <li>Helen Gonzalez</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Discord -->
+    <div class="tooltip-container">
+      <div class="tooltip">
+        <div class="profile">
+          <div class="user">
+            <div class="img">DI</div>
+            <div class="details">
+              <div class="name">MadTiers</div>
+              <div class="username">@Molowww</div>
+            </div>
+          </div>
+          <div class="about">Tier List</div>
+        </div>
+      </div>
+      <div class="text">
+        <a href="https://discord.gg/ggMrJ7V4NW" class="icon" target="_blank" rel="noopener noreferrer">
+          <div class="layer">
+            <span></span><span></span><span></span><span></span>
+            <span class="fab fa-discord">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3.117 28 28" height="28" width="28">
+                <path fill="#5865F2" d="M23.719 1.815A22.8 22.8 0 0 0 17.942 0c-.249.45-.54 1.055-.74 1.536q-3.231-.486-6.402 0C10.6 1.055 10.302.45 10.051 0A22.7 22.7 0 0 0 4.27 1.82C.614 7.344-.377 12.731.119 18.042c2.425 1.811 4.775 2.911 7.085 3.63a17.6 17.6 0 0 0 1.517-2.499 15 15 0 0 1-2.389-1.163 12 12 0 0 0 .586-.463c4.607 2.155 9.613 2.155 14.165 0a14 14 0 0 0 .586.463 15 15 0 0 1-2.394 1.165c.438.877.945 1.714 1.517 2.499 2.312-.72 4.664-1.82 7.089-3.633.581-6.156-.993-11.494-4.162-16.227M9.349 14.776c-1.383 0-2.517-1.291-2.517-2.863s1.11-2.866 2.517-2.866 2.541 1.291 2.517 2.866c.002 1.572-1.11 2.863-2.517 2.863m9.302 0c-1.383 0-2.517-1.291-2.517-2.863s1.11-2.866 2.517-2.866 2.541 1.291 2.517 2.866c0 1.572-1.11 2.863-2.517 2.863"></path>
+              </svg>
+            </span>
+          </div>
+          <div class="text">Discord</div>
+        </a>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+      Copyrights © Instituto Ceferino Namuncurá - By Ian Lopez 2025
+    </footer>
+  </div>
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
