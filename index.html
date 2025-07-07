@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mi Página de Informática</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="snow" id="snow"></div>
+
+    <div class="anim-container">
+      <div class="button-row">
+        <button onclick="showVideo(1)">Video 1</button>
+        <button onclick="showVideo(2)">Video 2</button>
+        <button onclick="showVideo(3)">Video 3</button>
+        <button onclick="showVideo(4)">Video 4</button>
+      </div>
+      <div class="main-box">
+        <div class="content-area" id="content-area">
+          <p>Haz clic en un botón para ver el video.</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="grupos-section">
+      <div class="grupo">
+        <img src="img/grupo1.png" alt="Grupo Primero" />
+        <ul>
+          <li><strong>School Tour</strong></li>
+          <li>C. Hernández</li>
+          <li>P. Raffo</li>
+          <li>O. Causero</li>
+          <li>P. Magarelli</li>
+          <li>S. Magarelli</li>
+        </ul>
+      </div>
+      <div class="grupo">
+        <img src="img/grupo2.png" alt="Grupo Segundo" />
+        <ul>
+          <li><strong>Un día con el cefe</strong></li>
+          <li>Balbo</li>
+          <li>Varela</li>
+          <li>Sapio</li>
+          <li>Cirelli</li>
+          <li>Fariña</li>
+          <li>Calio</li>
+        </ul>
+      </div>
+      <div class="grupo">
+        <img src="img/grupo3.png" alt="Grupo Tercero" />
+        <ul>
+          <li><strong>Grupo: "un día normal con cuarto año"</strong></li>
+          <li>Pared</li>
+          <li>Arancibia</li>
+          <li>De luca</li>
+          <li>Luna</li>
+          <li>Muñoz</li>
+        </ul>
+      </div>
+      <div class="grupo">
+        <img src="img/grupo4.png" alt="Grupo Cuarto" />
+        <ul>
+          <li><strong>El misterio en el ceferino</strong></li>
+          <li>Azul Carcione</li>
+          <li>Ema Cettefrati</li>
+          <li><span class="rojo">Ian Lopez (Owner)</span></li>
+          <li>Helen Gonzalez</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="cube-container">
+      <canvas id="cube-canvas" width="800" height="600"></canvas>
+      <div class="cube-side-text">
+        <h2>Proyectos</h2>
+        <div class="project-list">
+          <ul>
+            <li>Desarrollador de Pag (Principiante)</li>
+            <li>Desarrollador de Bot De Discords (Principiante)</li>
+            <li>Cube inspirado de Nightmare_33n</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      Copyrights © Instituto Ceferino Namuncurá - By Ian Lopez 2025
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
